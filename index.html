@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#14532d">
+    <title>Scanner QR Tribu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+  </head>
+  <body>
+    <main class="app">
+      <section class="hero card">
+        <div class="brand">
+          <div class="brand-mark">T</div>
+          <div>
+            <h1>Scanner QR Tribu</h1>
+            <p>Control rápido de entradas para producción</p>
+          </div>
+        </div>
+
+        <div id="statusBox" class="status ready">
+          <strong id="statusTitle">Listo para escanear</strong>
+          <span id="statusText">Tocá iniciar y permití el acceso a la cámara.</span>
+        </div>
+      </section>
+
+      <section class="card scanner-card">
+        <div id="readerShell" class="reader-shell">
+          <div id="reader"></div>
+          <div id="readerPlaceholder" class="reader-placeholder">
+            <span>▣</span>
+            <strong>Cámara inactiva</strong>
+            <p>El scanner usa HTTPS y permisos del navegador.</p>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="startButton" class="btn primary" type="button">Iniciar escaneo</button>
+          <button id="stopButton" class="btn secondary" type="button" disabled>Detener escaneo</button>
+        </div>
+      </section>
+
+      <section class="card manual-card">
+        <h2>Validación manual</h2>
+        <p>Pegá un token o el link completo del QR.</p>
+
+        <label for="manualInput">Token o link</label>
+        <textarea id="manualInput" rows="3" placeholder="Ej: https://script.google.com/macros/s/.../exec?token=TOKEN"></textarea>
+
+        <div class="actions">
+          <button id="manualButton" class="btn primary" type="button">Validar manualmente</button>
+          <button id="clearButton" class="btn ghost" type="button">Limpiar</button>
+        </div>
+      </section>
+
+      <section class="card links-card">
+        <button id="panelButton" class="btn panel" type="button">Abrir panel de producción</button>
+        <p class="hint">Configurá las URLs en <code>app.js</code> antes de publicar.</p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
