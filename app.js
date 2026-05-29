@@ -1,5 +1,5 @@
-const APPS_SCRIPT_BASE_URL = 'PEGAR_URL_DE_WEB_APP';
-const PRODUCTION_PANEL_URL = 'PEGAR_URL_PANEL_PRODUCCION';
+const APPS_SCRIPT_BASE_URL = 'https://script.google.com/macros/s/AKfycbwh0huxkzpI5GFcK80L5-wrnb60j8FYcO5--Ntl54VoMbBp8DllOpQ9o5xMBPPMtkcMDw/exec';
+const PRODUCTION_PANEL_URL = 'https://script.google.com/macros/s/AKfycbwh0huxkzpI5GFcK80L5-wrnb60j8FYcO5--Ntl54VoMbBp8DllOpQ9o5xMBPPMtkcMDw/exec?admin=tribu';
 
 const SCAN_DEBOUNCE_MS = 2500;
 
